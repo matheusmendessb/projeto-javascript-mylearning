@@ -38,3 +38,11 @@ button.addEventListener("click", (e) => {
 
     houseFilter(input);
 });
+
+// Eventos para os cliques nos cards das casas (redirecionamento de página):
+
+hufflepuff.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    document.location.href = "/src/views/hufflepuff.html";
+})
