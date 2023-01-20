@@ -47,6 +47,12 @@ gryffindor.addEventListener("click", (e) => {
     document.location.href = "/src/views/gryffindor.html";
 })
 
+slytherin.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    document.location.href = "/src/views/slytherin.html";
+})
+
 hufflepuff.addEventListener("click", (e) => {
     e.preventDefault();
 
