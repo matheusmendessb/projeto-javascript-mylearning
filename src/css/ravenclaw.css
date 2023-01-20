@@ -1,0 +1,82 @@
+header {
+    background: #77C3EC;
+}
+  
+#div-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#header-logo {
+    width: 220px;
+    height: 230px;
+}
+
+#div-input-button {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 85vw;
+    max-width: 600px;
+}
+
+#header-input {
+    flex-grow: 2;
+    border: none;
+}
+
+#header-button {
+    background: #77C3EC;
+    border: 2px solid #77C3EC;
+    border-radius: 8px;
+    width: 25vw;
+    padding: 5px;
+    max-width: 190px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #cd7f32;
+    cursor: pointer;
+}
+
+#header-button:hover {
+    transition: 0.5s;
+    background: #cd7f32;
+    border-color: #cd7f32;
+    color: #77C3EC;
+}
+
+p {
+    color:#77C3EC;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+span {
+    color:#cd7f32;
+}
+
+a {
+    color: #8A2BE2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 950px) {
+    p {
+        text-align: center;
+    }
+}

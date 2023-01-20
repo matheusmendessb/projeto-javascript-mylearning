@@ -58,3 +58,9 @@ hufflepuff.addEventListener("click", (e) => {
 
     document.location.href = "/src/views/hufflepuff.html";
 })
+
+ravenclaw.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    document.location.href = "/src/views/ravenclaw.html";
+})
