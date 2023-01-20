@@ -41,6 +41,12 @@ button.addEventListener("click", (e) => {
 
 // Eventos para os cliques nos cards das casas (redirecionamento de página):
 
+gryffindor.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    document.location.href = "/src/views/gryffindor.html";
+})
+
 hufflepuff.addEventListener("click", (e) => {
     e.preventDefault();
 

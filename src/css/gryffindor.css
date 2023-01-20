@@ -1,5 +1,5 @@
 header {
-    background: #FFCC00;
+    background: #8b0000
 }
   
 #div-header {
@@ -35,8 +35,8 @@ header {
 }
 
 #header-button {
-    background: #FFCC00;
-    border: 2px solid #FFCC00;
+    background: #8b0000;
+    border: 2px solid #8b0000;
     border-radius: 8px;
     width: 25vw;
     padding: 5px;
@@ -47,26 +47,26 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #5A5A5A;
+    color: #d4af37;
     cursor: pointer;
 }
 
 #header-button:hover {
     transition: 0.5s;
-    background: #5A5A5A;
-    border-color: #5A5A5A;
-    color: #FFCC00;
+    background: #d4af37;
+    border-color: #d4af37;
+    color: #8b0000;
 }
 
 p {
-    color:#FFCC00;
+    color:#8b0000;
     margin-top: 40px;
     margin-left: 10px;
     font-size: 25px;
 }
 
 span {
-    color:#5A5A5A;
+    color:#d4af37
 }
 
 a {

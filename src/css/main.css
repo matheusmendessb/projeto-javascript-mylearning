@@ -100,7 +100,7 @@ li {
 }
 
 #gryffindor-name {
-    color: #FF0000;
+    color: #8b0000;
     margin: 0;
 }
 
@@ -120,7 +120,7 @@ li {
 }
 
 #gryffindor-li:hover {
-    border-color: #FF0000;
+    border-color: #8b0000;
 }
 
 #slytherin-li:hover {
