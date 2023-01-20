@@ -1,0 +1,142 @@
+header {
+    background: #8A2BE2;
+}
+  
+#div-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#header-logo {
+    width: 300px;
+    height: 250px;
+}
+
+#div-input-button {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 85vw;
+    max-width: 600px;
+}
+
+#header-input {
+    flex-grow: 2;
+    border: none;
+}
+
+  #header-button {
+    background: #8A2BE2;
+    border: 2px solid #8A2BE2;
+    border-radius: 8px;
+    width: 25vw;
+    padding: 5px;
+    max-width: 190px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#header-button:hover {
+    transition: 0.5s;
+    background: #8B008B;
+    border-color: #8B008B;
+}
+
+p {
+    color:#8A2BE2;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+#div-ul {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin: 40px auto;     
+}
+
+li {
+    list-style: none;
+    background: #ffffff;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.house-logo {
+    width: 180px;
+    height: 200px;
+}
+
+#gryffindor-name {
+    color: #FF0000;
+    margin: 0;
+}
+
+#slytherin-name {
+    color: #008000;
+    margin: 0;
+}
+
+#hufflepuff-name {
+    color: #FFCC00;
+    margin: 0;
+}
+
+#ravenclaw-name {
+    color: #77C3EC;
+    margin: 0;
+}
+
+#gryffindor-li:hover {
+    border-color: #FF0000;
+}
+
+#slytherin-li:hover {
+    border-color: #008000;
+}
+
+#hufflepuff-li:hover {
+    border-color: #FFCC00;
+}
+
+#ravenclaw-li:hover {
+    border-color: #77C3EC;
+}
+
+@media (min-width: 950px) {
+    p {
+        text-align: center;
+    }
+}
