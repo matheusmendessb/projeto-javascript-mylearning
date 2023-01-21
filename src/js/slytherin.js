@@ -2,11 +2,11 @@
 
 const url = "https://hp-api.onrender.com/api/characters/house/slytherin";
 
-function slytherinRequisition() {
+function slytherinRequisition(input="") {
     fetch(url).then((response) => {
         return response.json();
     }).then((data) => {
-        createSlytherinCards(data);
+        createSlytherinCards(data, input);
     }).catch((err) => {
         console.log(err);
     });
@@ -14,10 +14,11 @@ function slytherinRequisition() {
 
 // Função responsável por criar os cards dos personagens:
 
-function createSlytherinCards(list) {
+function createSlytherinCards(list, input) {
     const ul = document.querySelector("ul");
+    ul.innerHTML = "";
     list.forEach((character) => {
-        if (character.image) {
+        if (character.image && character.name.toLowerCase().includes(input.toLowerCase())) {
             li = document.createElement("li");
 
             img = document.createElement("img");
@@ -36,6 +37,18 @@ function createSlytherinCards(list) {
 }
 
 slytherinRequisition();
+
+// Evento para o botão "Pesquisar" (chama novamente a função responsável pela requisição):
+
+const button = document.getElementById("header-button");
+
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let input = document.getElementById("header-input").value;
+
+    slytherinRequisition(input);
+});
 
 // Evento para o clique no botão "Retornar" (redirecionamento de página):
 

@@ -2,11 +2,11 @@
 
 const url = "https://hp-api.onrender.com/api/characters/house/hufflepuff";
 
-function hufflepuffRequisition() {
+function hufflepuffRequisition(input="") {
     fetch(url).then((response) => {
         return response.json();
     }).then((data) => {
-        createHufflepuffCards(data);
+        createHufflepuffCards(data, input);
     }).catch((err) => {
         console.log(err);
     });
@@ -14,10 +14,11 @@ function hufflepuffRequisition() {
 
 // Função responsável por criar os cards dos personagens:
 
-function createHufflepuffCards(list) {
+function createHufflepuffCards(list, input) {
     const ul = document.querySelector("ul");
+    ul.innerHTML = "";
     list.forEach((character) => {
-        if (character.image) {
+        if (character.image && character.name.toLowerCase().includes(input.toLowerCase())) {
             li = document.createElement("li");
 
             img = document.createElement("img");
@@ -36,6 +37,18 @@ function createHufflepuffCards(list) {
 }
 
 hufflepuffRequisition();
+
+// Evento para o botão "Pesquisar" (chama novamente a função responsável pela requisição):
+
+const button = document.getElementById("header-button");
+
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let input = document.getElementById("header-input").value;
+
+    hufflepuffRequisition(input);
+});
 
 // Evento para o clique no botão "Retornar" (redirecionamento de página):
 
