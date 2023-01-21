@@ -44,23 +44,23 @@ button.addEventListener("click", (e) => {
 gryffindor.addEventListener("click", (e) => {
     e.preventDefault();
 
-    document.location.href = "./src/views/gryffindor.html";
+    document.location.href = "./src/pages/gryffindor/index.html";
 })
 
 slytherin.addEventListener("click", (e) => {
     e.preventDefault();
 
-    document.location.href = "./src/views/slytherin.html";
+    document.location.href = "./src/pages/slytherin/index.html";
 })
 
 hufflepuff.addEventListener("click", (e) => {
     e.preventDefault();
 
-    document.location.href = "./src/views/hufflepuff.html";
+    document.location.href = "./src/pages/hufflepuff/index.html";
 })
 
 ravenclaw.addEventListener("click", (e) => {
     e.preventDefault();
 
-    document.location.href = "./src/views/ravenclaw.html";
+    document.location.href = "./src/pages/ravenclaw/index.html";
 })
