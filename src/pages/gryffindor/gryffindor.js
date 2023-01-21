@@ -57,5 +57,5 @@ const returnButton = document.getElementById("return-button");
 returnButton.addEventListener("click", (e) => {
     e.preventDefault();
     
-    document.location.href = "/index.html";
+    document.location.href = "/projeto-javascript-mylearning";
 });
